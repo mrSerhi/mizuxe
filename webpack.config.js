@@ -9,9 +9,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
-  entry: {
-    main: "./src/index.js"
-  },
+  entry: ["./src/index.js"],
   output: {
     path: path.resolve(__dirname, "dist"),
     // filename: "./js/[name].[chunkhash].js"
@@ -29,6 +27,10 @@ module.exports = {
         }
       },
       {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader", "postcss-loader"]
+      },
+      {
         test: /\.scss$/,
         use: [
           "style-loader",
@@ -36,6 +38,21 @@ module.exports = {
           "css-loader",
           "postcss-loader",
           "sass-loader"
+        ]
+      },
+      {
+        test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: "url-loader?limit=10000"
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
+        use: "file-loader"
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          "file-loader?name=images/[name].[ext]",
+          "image-webpack-loader?bypassOnDebug"
         ]
       }
     ]
