@@ -10,24 +10,40 @@
   </head>
 
   <body>
-    <h1 class="display-1">Hello Webpack</h1>
+    <div class="navbar navbar-expand-sm fixed-top navbar-light py-4">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="./dist/imgs/logo/mlogo.png" width="50" height="50" alt="" />
+          <h4 class="d-inline align-middle text-danger">Mizuxe</h4>
+        </a>
 
-    <div class="card p-3 bg-info">
-      <h2 class="h2 card-header">Helllo from bootstrap 4</h2>
-      <div class="card-body">
-        <h3 class="card-title">This is card fuck you bich!</h3>
-        <p class="card-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
-          dolor ducimus rem quos corporis nisi nemo assumenda nobis officiis
-          recusandae.
-        </p>
-        <button class="btn btn-lg btn-warning">btn</button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#mainNavBar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavBar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#authors" class="nav-link">Meet the Authors</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- ./collapse -->
       </div>
-
-      <div class="card-footer">
-        <small class="text-muted">(= first card =)</small>
-      </div>
+      <!-- ./container -->
     </div>
+    <!-- ./navbar -->
 
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>

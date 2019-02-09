@@ -1,3 +1,17 @@
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
 
+body {
+  margin-top: 105px;
+}
+
+.navbar {
+  box-shadow: 2px 2px 2px $primary;
+  background-color: $white;
+  opacity: 0.8;
+
+  .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+  }
+}
