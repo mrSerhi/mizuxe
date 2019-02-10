@@ -107,6 +107,12 @@ body {
       font-size: 1rem;
     }
   }
+
+  #authors {
+    .card {
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -137,7 +143,8 @@ body {
     }
   }
 
-  #about {
+  #about,
+  #authors {
     h1,
     .card-header {
       font-size: 1.8rem;
