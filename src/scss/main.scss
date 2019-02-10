@@ -32,6 +32,14 @@ body {
   }
 }
 
+.about-header {
+  width: 50%;
+  max-width: 50%;
+  margin: auto;
+
+  border-bottom: 2px solid $gray-300;
+}
+
 // media queries
 @media (min-width: 768px) and (max-width: 1024px) {
   #wishes {
@@ -73,6 +81,17 @@ body {
       font-size: 1.2rem;
     }
   }
+
+  #about {
+    h1,
+    .card-header {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 @media (max-width: 360px) {
@@ -95,6 +114,17 @@ body {
     }
 
     .card-text {
+      font-size: 0.9rem;
+    }
+  }
+
+  #about {
+    h1,
+    .card-header {
+      font-size: 1.4rem;
+    }
+
+    p {
       font-size: 0.9rem;
     }
   }
