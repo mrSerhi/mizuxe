@@ -31,3 +31,71 @@ body {
     background: $primary-overlay;
   }
 }
+
+// media queries
+@media (min-width: 768px) and (max-width: 1024px) {
+  #wishes {
+    .card-title,
+    .card-header {
+      font-size: 1.5rem;
+    }
+
+    .card-text {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #showcase {
+    min-height: 500px;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  // castom class for margin-bottom on small size devices
+  .sm-dev-margin {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #showcase {
+    min-height: 500px;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  #showcase {
+    min-height: 400px;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  #wishes {
+    .card-title,
+    .card-header {
+      font-size: 1.2rem;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+    }
+  }
+}
