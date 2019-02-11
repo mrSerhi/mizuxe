@@ -303,7 +303,8 @@
       <!-- ./container -->
     </section>
 
-    <div id="authors" class="my-5">
+    <!-- AUTHORS -->
+    <section id="authors" class="my-5">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -459,7 +460,73 @@
         </div>
       </div>
       <!-- ./container -->
-    </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-primary text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-md-10 text-center">
+            <h3 class="h3">Contact Us</h3>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              non reiciendis unde!
+            </p>
+
+            <form>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-primary text-white">
+                    <i class="far fa-user"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <!-- ./input-group -->
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-primary text-white">
+                    <i class="far fa-envelope"></i>
+                  </span>
+                </div>
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <!-- ./input-group -->
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-primary text-white">
+                    <i class="far fa-edit"></i>
+                  </span>
+                </div>
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <!-- ./input-group -->
+              
+              <div class="d-flex justify-content-center">
+                <input
+                  class="btn w-50 custom-btn-hover text-uppercase"
+                  type="submit"
+                  value="submit"
+                />
+              </div>
+            </form>
+          </div>
+          <!-- ./col -->
+
+          <div class="col-lg-2 col-md-2 d-none d-md-block align-self-center">
+            <img src="./dist/img/logo/mlogo.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <!-- ./row -->
+      </div>
+      <!-- ./container -->
+    </section>
 
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>

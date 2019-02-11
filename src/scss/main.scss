@@ -77,12 +77,43 @@ body {
   }
 }
 
+#contact {
+  form {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      background-color: lighten($color: $danger, $amount: 10%);
+      color: $white;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    textarea::placeholder {
+      color: $white;
+      font-style: italic;
+    }
+  }
+}
+
 @keyframes bounce {
   from {
     transform: scale(1);
   }
   to {
     transform: scale(1.2);
+  }
+}
+
+// custom class for button hover effect
+
+.custom-btn-hover {
+  background: $white;
+  color: $red;
+
+  &:hover,
+  &:active {
+    background-color: lighten($color: $danger, $amount: 10%);
+    color: $white;
   }
 }
 
@@ -152,6 +183,16 @@ body {
 
     p {
       font-size: 1.2rem;
+    }
+  }
+
+  #contact {
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 0.9rem;
     }
   }
 }
