@@ -350,6 +350,7 @@
                     </a>
                   </div>
                 </div>
+                <!-- ./social -->
               </div>
             </div>
             <!-- ./card -->
@@ -466,7 +467,7 @@
     <section id="contact" class="bg-primary text-white py-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-10 col-md-10 text-center">
+          <div class="col-lg-6 offset-lg-2 col-md-10 text-center text-lg-left">
             <h3 class="h3">Contact Us</h3>
             <p class="lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
@@ -507,7 +508,7 @@
                 ></textarea>
               </div>
               <!-- ./input-group -->
-              
+
               <div class="d-flex justify-content-center">
                 <input
                   class="btn w-50 custom-btn-hover text-uppercase"
@@ -527,6 +528,82 @@
       </div>
       <!-- ./container -->
     </section>
+
+    <footer id="footer" class=" bg-dark text-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <ul
+              class="list-unstyled d-sm-flex flex-sm-row flex-md-column text-capitalize"
+            >
+              <li>
+                <a class="btn btn-link text-danger active" href="#"
+                  >news about everything</a
+                >
+              </li>
+              <li>
+                <a class="btn btn-link text-light" href="#"
+                  >what, where, most importantly why</a
+                >
+              </li>
+              <li>
+                <a class="btn btn-link text-light" href="#"
+                  >where to go on vacation</a
+                >
+              </li>
+              <li>
+                <a class="btn btn-link text-light" href="#"
+                  >how to get back from vacation</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 text-center text-white">
+            <div
+              class="social h-100 d-flex flex-column justify-content-center align-content-center"
+            >
+              <h4 class="h4 mb-3">Follow Us</h4>
+              <div class="d-flex flex-row justify-content-between">
+                <a href="#" class="btn btn-link">
+                  <i class="fab fa-facebook-f fa-2x"></i>
+                </a>
+                <a href="#" class="btn btn-link text-danger">
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="#" class="btn btn-link text-light">
+                  <i class="fab fa-google fa-2x"></i>
+                </a>
+                <a href="#" class="btn btn-link text-info">
+                  <i class="fab fa-telegram-plane fa-2x"></i>
+                </a>
+                <a href="#" class="btn btn-link text-warning">
+                  <i class="fab fa-snapchat-square fa-2x"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ./social -->
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <div class="copyright d-flex flex-column justify-content-end h-100">
+              <div class="footer-data align-self-end">
+                <small id="footer-date"></small>
+                <small>
+                  <i class="far fa-copyright"></i>
+                  All rights are reserved.
+                </small>
+              </div>
+              <!-- ./footer-data -->
+            </div>
+            <!-- ./copyright -->
+          </div>
+          <!-- ./col -->
+        </div>
+        <!-- ./row -->
+      </div>
+      <!-- ./container -->
+    </footer>
 
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>
