@@ -9,8 +9,11 @@
     />
   </head>
 
-  <body>
-    <div class="navbar navbar-expand-sm fixed-top navbar-light py-4">
+  <body id="home" data-spy="scroll" data-target="#main-nav">
+    <nav
+      class="navbar navbar-expand-sm fixed-top navbar-light py-4"
+      id="main-nav"
+    >
       <div class="container">
         <a href="#" class="navbar-brand">
           <img src="./dist/img/logo/mlogo.png" width="50" height="50" alt="" />
@@ -27,23 +30,29 @@
         </button>
         <div class="collapse navbar-collapse" id="mainNavBar">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
             <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
+              <a href="#home" data-scroll="home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#authors" class="nav-link">Meet the Authors</a>
+              <a href="#about" data-scroll="about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
+              <a href="#authors" data-scroll="authors" class="nav-link"
+                >Meet the Authors</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" data-scroll="contact" class="nav-link"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
         <!-- ./collapse -->
       </div>
       <!-- ./container -->
-    </div>
-    <!-- ./navbar -->
+    </nav>
+    <!-- ./nav -->
 
     <!-- SHOWCASE -->
     <section id="showcase" class="py-5">

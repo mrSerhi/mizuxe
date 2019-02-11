@@ -7,5 +7,7 @@ import "./scss/main.scss"; // styles
 
 // JS
 import { setDataInFooter, getDataElement } from "./js/data";
+import smootScroll from "./js/smooth-scroll";
 
 getDataElement("footer-date", setDataInFooter()); // set up date in to footer section
+smootScroll("mainNavBar");
